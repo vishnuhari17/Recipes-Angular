@@ -1,0 +1,92 @@
+<div class="landing-container">
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Discover Amazing Recipes</h1>
+      <p class="subtitle">Your journey to becoming a master chef starts here</p>
+      <button routerLink="/home" class="cta-button">Explore Recipes</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature-grid">
+      <div class="feature-card" *ngFor="let feature of features">
+        <div class="feature-icon">{{ feature.icon }}</div>
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-recipes">
+    <h2>Popular Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pasta Recipe">
+        <h3>Classic Italian Pasta</h3>
+        <p>⭐ 4.8 (256 reviews)</p>
+      </div>
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sushi Recipe">
+        <h3>Homemade Sushi Rolls</h3>
+        <p>⭐ 4.9 (189 reviews)</p>
+      </div>
+      <div class="recipe-card">
+        <img src="https://images.unsplash.com/photo-1631452180539-96aca7d48617?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Curry Recipe">
+        <h3>Spicy Indian Curry</h3>
+        <p>⭐ 4.7 (312 reviews)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <img src="https://images.unsplash.com/photo-1639937784957-9b1af0a1b6d1?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" class="user-avatar">
+        <p>"This platform transformed my cooking journey. The recipes are amazing!"</p>
+        <h4>Sarah Johnson</h4>
+        <span>Home Chef</span>
+      </div>
+      <div class="testimonial-card">
+        <img src="https://images.unsplash.com/photo-1531750678683-05e128b006d4?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" class="user-avatar">
+        <p>"I love how easy it is to find and follow new recipes. Great community!"</p>
+        <h4>Mike Chen</h4>
+        <span>Food Enthusiast</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter for weekly recipe inspiration</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button class="subscribe-button">Subscribe</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p>Have questions? We'd love to hear from you.</p>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message"></textarea>
+        <button class="submit-button">Send Message</button>
+      </div>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <span>contactrecipes.com</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <span>+1 (555) 123-4567</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
